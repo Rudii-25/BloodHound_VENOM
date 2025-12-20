@@ -1,17 +1,17 @@
 
 .DS_Store
 
-Hackheld_Vega_PCB/fp-info-cache
+BloodHound_VENOM_PCB/fp-info-cache
 
-HackHeld Vega II/fp-info-cache
+BloodHound_VENOM-backups/
 
-HackHeld Vega II/Hackheld_Vega-backups/
+BloodHound_VENOM/production/
 
-HackHeld Vega II/production/
+BloodHound_VENOM/BloodHound_VENOM_LiPo-backups/
 
-HackHeld Vega II LiPo/Hackheld_Vega_LiPo-backups/
+BloodHound_VENOM LiPo/fp-info-cache/
 
-HackHeld Vega II LiPo/fp-info-cache
+BloodHound_VENOM_LiPo-backups/
 
 *.kicad_prl
 
