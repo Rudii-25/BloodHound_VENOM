@@ -1,0 +1,7 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"SW1,SW6,SW5,SW4,SW3,SW2";"SW-KEY-TH_4P-L6.0-W6.0-P4.50-LS6.5";6;"SW_Push";;;
+2;"D1";"LED-SMD_4P-L5.0-W5.0-BL_TC5050RGB-handsolder";1;"WS2812B";;;
+3;"J1";"OLED_I2C_1.3";1;"OLED_I2C";;;
+4;"U1";"D1_mini_ESP8266";1;"D1_mini";;;
+5;"R2";"R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal";1;"10K";;;
+6;"R1";"R_1206_3216Metric_Pad1.30x1.75mm_HandSolder";1;"10K";;;
