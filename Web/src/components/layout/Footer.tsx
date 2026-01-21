@@ -121,7 +121,7 @@ export function Footer() {
             © 2025 BloodHound VENOM Project. Released under MIT License.
           </p>
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> by the open-source community
+            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> by Rudra Sharma
           </p>
         </div>
       </div>
