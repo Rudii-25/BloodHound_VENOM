@@ -3,24 +3,26 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Image, X, ZoomIn, Filter } from "lucide-react";
+// CHANGE: Renamed the 'Image' icon to 'ImageIcon' to avoid confusion with the standard <img> tag.
+import { Image as ImageIcon, X, ZoomIn, Filter } from "lucide-react";
 
 // Gallery images with categories
+// IMPORTANT: Make sure the 'Photos' folder is inside your 'public' directory at the root of your project.
 const galleryImages = [
-  { id: 1, category: "components", title: "Components Overview", desc: "All parts laid out for assembly" },
-  { id: 2, category: "components", title: "Parts Detail", desc: "Close-up of all electronic components" },
-  { id: 3, category: "tools", title: "Required Tools", desc: "Soldering tools and equipment" },
-  { id: 4, category: "assembly", title: "OLED Pinout", desc: "OLED display pin configuration" },
-  { id: 5, category: "final", title: "Working Device", desc: "Completed BloodHound VENOM in action" },
-  { id: 6, category: "battery", title: "Battery Mod Overview", desc: "LiPo battery modification layout" },
-  { id: 7, category: "battery", title: "Battery Step 1", desc: "First step of battery installation" },
-  { id: 8, category: "battery", title: "Battery Detail", desc: "Detailed view of battery connections" },
-  { id: 9, category: "battery", title: "Advanced Wiring", desc: "Advanced battery wiring configuration" },
-  { id: 10, category: "battery", title: "Battery in Case", desc: "Battery fitted inside the case" },
-  { id: 11, category: "battery", title: "Battery PCB", desc: "TP4056 charging module installation" },
-  { id: 12, category: "battery", title: "Wire Soldering", desc: "Soldering battery wires" },
-  { id: 13, category: "battery", title: "Complete Build", desc: "Finished battery-powered device" },
-  { id: 14, category: "comparison", title: "Size Comparison", desc: "With and without battery comparison" },
+  { id: 1, category: "components", title: "Components Overview", desc: "All parts laid out for assembly", src: "/Photos/BloodHound_VENOM-parts.jpg" },
+  { id: 2, category: "components", title: "Parts Detail", desc: "Close-up of all electronic components", src: "/Photos/BloodHound_VENOM-parts.png" },
+  { id: 3, category: "tools", title: "Required Tools", desc: "Soldering tools and equipment", src: "/Photos/BloodHound_VENOM-tools.jpg" },
+  { id: 4, category: "assembly", title: "OLED Pinout", desc: "OLED display pin configuration", src: "/Photos/BloodHound_VENOM-oled-pinout.jpg" },
+  { id: 5, category: "final", title: "Working Device", desc: "Completed BloodHound VENOM in action", src: "/Photos/BloodHound_VENOMmain running photo.jpg" },
+  { id: 6, category: "battery", title: "Battery Mod Overview", desc: "LiPo battery modification layout", src: "/Photos/BloodHound_VENOM-bat-mod12.jpg" },
+  { id: 7, category: "battery", title: "Battery Step 1", desc: "First step of battery installation", src: "/Photos/BloodHound_VENOM-bat-mod1.jpg" },
+  { id: 8, category: "battery", title: "Battery Detail", desc: "Detailed view of battery connections", src: "/Photos/BloodHound_VENOM-bat-mod.jpg" },
+  { id: 9, category: "battery", title: "Advanced Wiring", desc: "Advanced battery wiring configuration", src: "/Photos/BloodHound_VENOM-bat-modwireconfig.jpg" },
+  { id: 10, category: "battery", title: "Battery in Case", desc: "Battery fitted inside the case", src: "/Photos/BloodHound_VENOM-bat-modwithcase.jpg" },
+  { id: 11, category: "battery", title: "Battery PCB", desc: "TP4056 charging module installation", src: "/Photos/BloodHound_VENOM-bat-modwire.jpg" },
+  { id: 12, category: "battery", title: "Wire Soldering", desc: "Soldering battery wires", src: "/Photos/BloodHound_VENOM-bat-modwiresolder.jpg" },
+  { id: 13, category: "battery", title: "Complete Build", desc: "Finished battery-powered device", src: "/Photos/BloodHound_VENOM-bat-modcase.jpg" },
+  { id: 14, category: "comparison", title: "Size Comparison", desc: "With and without battery comparison", src: "/Photos/with battery and without battery comparison.jpg" },
 ];
 
 const categories = [
@@ -33,23 +35,12 @@ const categories = [
   { id: "comparison", label: "Comparison" },
 ];
 
-// Generate placeholder colors for demo
-const getPlaceholderColor = (id: number) => {
-  const colors = [
-    "from-primary/30 to-secondary/30",
-    "from-secondary/30 to-primary/30",
-    "from-primary/40 to-muted",
-    "from-muted to-secondary/40",
-  ];
-  return colors[id % colors.length];
-};
-
 export default function GalleryPage() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
 
-  const filteredImages = selectedCategory === "all" 
-    ? galleryImages 
+  const filteredImages = selectedCategory === "all"
+    ? galleryImages
     : galleryImages.filter(img => img.category === selectedCategory);
 
   return (
@@ -64,7 +55,8 @@ export default function GalleryPage() {
             className="text-center mb-12"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-medium mb-6">
-              <Image className="w-4 h-4" />
+              {/* CHANGE: Using the renamed ImageIcon */}
+              <ImageIcon className="w-4 h-4" />
               Photo Gallery
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold mb-4">
@@ -89,7 +81,7 @@ export default function GalleryPage() {
                 size="sm"
                 onClick={() => setSelectedCategory(cat.id)}
               >
-                {cat.id === "all" && <Filter className="w-4 h-4" />}
+                {cat.id === "all" && <Filter className="w-4 h-4 mr-2" />}
                 {cat.label}
               </Button>
             ))}
@@ -112,14 +104,13 @@ export default function GalleryPage() {
                   className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer hover-lift"
                   onClick={() => setSelectedImage(image)}
                 >
-                  {/* Placeholder gradient */}
-                  <div className={`absolute inset-0 bg-gradient-to-br ${getPlaceholderColor(image.id)} flex items-center justify-center`}>
-                    <div className="text-center p-4">
-                      <Image className="w-12 h-12 text-foreground/30 mx-auto mb-2" />
-                      <p className="text-xs text-foreground/50 font-medium">{image.title}</p>
-                    </div>
-                  </div>
-                  
+                  {/* CHANGE: Replaced placeholder and Next.js Image with a standard <img> tag */}
+                  <img
+                    src={image.src}
+                    alt={image.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+
                   {/* Hover overlay */}
                   <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <div className="text-center p-4">
@@ -140,20 +131,20 @@ export default function GalleryPage() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="absolute top-4 right-4 z-10"
+                  className="absolute top-4 right-4 z-10 bg-background/50 hover:bg-background/80"
                   onClick={() => setSelectedImage(null)}
                 >
                   <X className="w-5 h-5" />
                 </Button>
-                
+
                 {selectedImage && (
                   <div>
-                    <div className={`aspect-video bg-gradient-to-br ${getPlaceholderColor(selectedImage.id)} flex items-center justify-center`}>
-                      <div className="text-center">
-                        <Image className="w-24 h-24 text-foreground/30 mx-auto mb-4" />
-                        <p className="text-lg text-foreground/50 font-medium">{selectedImage.title}</p>
-                      </div>
-                    </div>
+                    {/* CHANGE: Using a standard <img> tag for the modal image */}
+                    <img
+                      src={selectedImage.src}
+                      alt={selectedImage.title}
+                      className="w-full h-auto max-h-[80vh] object-contain"
+                    />
                     <div className="p-6">
                       <h3 className="text-xl font-bold text-foreground mb-2">{selectedImage.title}</h3>
                       <p className="text-muted-foreground">{selectedImage.desc}</p>
@@ -178,12 +169,12 @@ export default function GalleryPage() {
             <div className="card-glow p-12 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold mb-4">Share Your Build</h3>
               <p className="text-muted-foreground mb-6">
-                Built your own BloodHound VENOM? We'd love to see it! 
+                Built your own BloodHound VENOM? We'd love to see it!
                 Share your project photos with the community.
               </p>
               <Button variant="hero" asChild>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                  Submit Your Photos
+                <a href="https://github.com/Rudii-25/BloodHound_VENOM" target="_blank" rel="noopener noreferrer">
+                  Submit Your Photos by Forking the Project
                 </a>
               </Button>
             </div>

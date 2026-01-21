@@ -91,6 +91,11 @@ export default function AboutPage() {
                   of this device, fostering a community of innovation and learning.
                 </p>
               </div>
+              <div align="center">
+                Made with ❤️ by Rudra Sharma
+                <br />
+                ⭐ Star this repository if you find it useful!
+              </div>
             </motion.div>
 
             {/* License */}
@@ -212,7 +217,7 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Button variant="neon" asChild>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Rudii-25/BloodHound_VENOM" target="_blank" rel="noopener noreferrer">
                     <Github className="w-4 h-4" />
                     GitHub
                   </a>
@@ -230,7 +235,7 @@ export default function AboutPage() {
                   </a>
                 </Button>
                 <Button variant="outline" asChild>
-                  <a href="mailto:hello@bloodhound.dev">
+                  <a href="mailto:rudra25trikha@gmail.com" target="_blank" rel="noopener noreferrer">
                     <Mail className="w-4 h-4" />
                     Email
                   </a>

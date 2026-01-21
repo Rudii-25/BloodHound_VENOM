@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import devicePhoto from "@/assets/device-photo.jpg";
+import devicePhoto from "@/assets/hero-device.png";
 
 export function DeviceModel() {
   return (
@@ -28,7 +28,7 @@ export function DeviceModel() {
         <img 
           src={devicePhoto} 
           alt="BloodHound VENOM Device - ESP8266 powered handheld IoT device with OLED display" 
-          className="max-h-[420px] w-auto object-contain rounded-xl shadow-2xl"
+          className="max-h-[290px] w-auto object-contain rounded-xl shadow-2xl"
           style={{
             filter: "drop-shadow(0 0 30px rgba(255, 23, 68, 0.4)) drop-shadow(0 0 60px rgba(0, 212, 255, 0.2))"
           }}

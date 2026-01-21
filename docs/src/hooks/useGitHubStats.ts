@@ -50,7 +50,7 @@ export function useGitHubStats(): GitHubStats {
       try {
         // Fetch repo data for stars and forks
         const repoResponse = await fetch(
-          `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}`
+          `https://api.github.com/repos/Rudii-25/BloodHound_VENOM`
         );
 
         if (!repoResponse.ok) {
@@ -61,7 +61,7 @@ export function useGitHubStats(): GitHubStats {
 
         // Fetch contributors count
         const contributorsResponse = await fetch(
-          `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contributors?per_page=1`
+          `https://api.github.com/repos/Rudii-25/BloodHound_VENOM/contributors?per_page=1`
         );
 
         let contributorsCount = 1;
@@ -118,4 +118,4 @@ export function useGitHubStats(): GitHubStats {
   return stats;
 }
 
-export const GITHUB_REPO_URL = `https://github.com/${REPO_OWNER}/${REPO_NAME}`;
+export const GITHUB_REPO_URL = `https://github.com/Rudii-25/BloodHound_VENOM`;

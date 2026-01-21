@@ -212,7 +212,7 @@ export default function ContributePage() {
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Button variant="hero" size="lg" asChild>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Rudii-25/BloodHound_VENOM" target="_blank" rel="noopener noreferrer">
                     <Github className="w-5 h-5" />
                     View on GitHub
                     <ArrowRight className="w-4 h-4" />

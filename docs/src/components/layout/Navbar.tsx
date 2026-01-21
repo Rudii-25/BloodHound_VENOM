@@ -73,7 +73,7 @@ export function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <Button variant="neonCyan" size="sm" asChild>
               <a
-                href="https://github.com"
+                href="https://github.com/Rudii-25/BloodHound_VENOM"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -128,7 +128,7 @@ export function Navbar() {
             <div className="pt-4 border-t border-border flex flex-col gap-2">
               <Button variant="neonCyan" size="sm" asChild className="w-full">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Rudii-25/BloodHound_VENOM"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

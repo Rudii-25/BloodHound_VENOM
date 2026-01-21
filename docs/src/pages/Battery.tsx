@@ -164,9 +164,11 @@ export default function BatteryPage() {
                 <div className="card-elevated p-8">
                   <div className="flex justify-between items-center mb-6">
                     <h3 className="text-2xl font-bold">Additional Components</h3>
-                    <Button variant="neonCyan" size="sm">
-                      <Download className="w-4 h-4" />
-                      Download List
+                    <Button variant="neonCyan" size="sm" asChild>
+                      <a href="https://github.com/Rudii-25/BloodHound_VENOM" target="_blank" rel="noopener noreferrer">
+                        <Download className="w-4 h-4" />
+                        Download List
+                      </a>
                     </Button>
                   </div>
                   <div className="space-y-4">

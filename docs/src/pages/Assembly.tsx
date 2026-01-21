@@ -160,9 +160,11 @@ export default function AssemblyPage() {
                 <div className="card-elevated p-8 overflow-x-auto">
                   <div className="flex justify-between items-center mb-6">
                     <h3 className="text-2xl font-bold">Bill of Materials</h3>
-                    <Button variant="neonCyan" size="sm">
-                      <Download className="w-4 h-4" />
-                      Download CSV
+                    <Button variant="neonCyan" size="sm" asChild>
+                      <a href="https://github.com/Rudii-25/BloodHound_VENOM" target="_blank" rel="noopener noreferrer">
+                        <Download className="w-4 h-4" />
+                        Download CSV
+                      </a>
                     </Button>
                   </div>
                   <table className="w-full min-w-[600px]">
@@ -271,13 +273,17 @@ export default function AssemblyPage() {
                     <div>
                       <h4 className="text-lg font-semibold mb-4 text-foreground">Downloads</h4>
                       <div className="space-y-3">
-                        <Button variant="neon" className="w-full justify-start">
-                          <Download className="w-4 h-4" />
-                          Download STL Files
+                        <Button variant="neon" className="w-full justify-start" asChild>
+                          <a href="https://github.com/Rudii-25/BloodHound_VENOM" target="_blank" rel="noopener noreferrer">
+                            <Download className="w-4 h-4" />
+                            Download STL Files
+                          </a>
                         </Button>
-                        <Button variant="outline" className="w-full justify-start">
-                          <Download className="w-4 h-4" />
-                          OpenSCAD Source
+                        <Button variant="outline" className="w-full justify-start" asChild>
+                          <a href="https://github.com/Rudii-25/BloodHound_VENOM" target="_blank" rel="noopener noreferrer">
+                            <Download className="w-4 h-4" />
+                            OpenSCAD Source
+                          </a>
                         </Button>
                       </div>
                     </div>
