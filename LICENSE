@@ -1,0 +1,207 @@
+MIT License
+
+Copyright (c) 2026 BloodHound VENOM Project Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+ADDITIONAL TERMS FOR HARDWARE DESIGNS
+================================================================================
+
+The hardware designs (PCB layouts, schematics, and 3D models) in this project
+are licensed under the MIT License with the following additional terms:
+
+1. FREEDOM TO USE
+   - You are free to manufacture PCBs from the provided Gerber files
+   - You may use this design for personal, educational, or commercial purposes
+   - No permission needed to build or modify for your own use
+
+2. ATTRIBUTION APPRECIATED (not required)
+   - If you redistribute the design, please acknowledge the original designers
+   - Link back to this repository if possible
+   - Credit goes a long way in the maker community
+
+3. NO WARRANTY
+   - The designs are provided as-is without any warranty
+   - Manufacturers are responsible for design verification
+   - Component selection and safety are your responsibility
+   - Test all devices before use
+
+4. RESPONSIBLE USE
+   - Follow local laws and regulations
+   - Use only for legal purposes
+   - Do not use for harm or illegal activities
+   - Respect intellectual property of component manufacturers
+
+5. COMPONENT LICENSING
+   - Respect licenses of third-party components used
+   - KiCAD is licensed under CERN Open Hardware License (COHL)
+   - Libraries and symbols follow their respective licenses
+   - See individual component datasheets for additional terms
+
+6. SOFTWARE LICENSE
+   - Firmware code is under MIT License
+   - You may use, modify, and distribute freely
+   - Provide source code when distributing modified versions
+   - Include this license in distributions
+
+================================================================================
+THIRD-PARTY COMPONENTS & ACKNOWLEDGMENTS
+================================================================================
+
+This project uses and acknowledges the following:
+
+HARDWARE PLATFORMS:
+- D1 Mini (ESP8266) by Wemos/Lolin
+- KiCAD - Open source electronic design automation
+
+SOFTWARE LIBRARIES:
+- Arduino IDE and ESP8266 Arduino Core
+- Adafruit SSD1306 OLED library
+- Adafruit GFX library
+- Adafruit NeoPixel library
+- Other Arduino community libraries
+
+DOCUMENTATION:
+- Markdown documentation format
+- Community guides and best practices
+- Open source principles and collaboration
+
+All third-party components retain their respective licenses and copyright notices.
+
+================================================================================
+DISCLAIMER
+================================================================================
+
+SAFETY WARNING: This project involves working with:
+- Electrical components and power supplies
+- Soldering and high-temperature tools
+- Lithium-based batteries (in battery variant)
+- Radio frequency transmitters (WiFi)
+
+Users are responsible for:
+- Following proper safety procedures
+- Using appropriate safety equipment
+- Understanding electrical safety
+- Proper battery handling and disposal
+- Compliance with local regulations
+
+The authors are NOT responsible for:
+- Injuries or accidents during assembly
+- Damage to property or equipment
+- Improper use or misuse of the device
+- Regulatory violations in your jurisdiction
+- Battery fires or explosions from mishandling
+
+BUILD AT YOUR OWN RISK
+
+================================================================================
+TERMS AND CONDITIONS
+================================================================================
+
+By using this software, documentation, or hardware designs, you agree to:
+
+1. Use this project legally and responsibly
+2. Not use for illegal activities or to cause harm
+3. Accept full responsibility for your builds
+4. Not hold authors liable for damage or injury
+5. Respect intellectual property of others
+6. Follow all applicable local and national laws
+
+================================================================================
+HOW TO COMPLY WITH THIS LICENSE
+================================================================================
+
+When sharing or distributing this project:
+
+REQUIRED:
+□ Include a copy of this LICENSE file
+□ Include original copyright notice
+□ State any modifications made to original
+
+RECOMMENDED:
+□ Link back to original repository
+□ Credit original authors
+□ Share improvements back to community
+□ Acknowledge third-party licenses
+
+================================================================================
+OPEN SOURCE SPIRIT
+================================================================================
+
+This project is released in the spirit of open-source collaboration.
+
+We encourage you to:
+✓ Build and modify
+✓ Learn and share knowledge
+✓ Contribute improvements
+✓ Support the maker community
+✓ Pay it forward
+
+This is a community project. Your contributions, feedback, and improvements
+help make it better for everyone.
+
+================================================================================
+QUESTIONS OR CONCERNS?
+================================================================================
+
+For questions about this license:
+- Review MIT License at https://opensource.org/licenses/MIT
+- Open an issue on GitHub
+- Contact project maintainers
+
+For safety concerns:
+- Consult with experienced makers
+- Review component datasheets
+- Seek professional help when needed
+- Prioritize safety over speed
+
+================================================================================
+CREDITS
+================================================================================
+
+BloodHound VENOM Project
+- Original Design & Concept
+- Open Source Community Contributors
+- All makers who build, test, and improve the design
+
+This license and project structure follows best practices from:
+- Open Source Initiative (OSI)
+- CERN Open Hardware License (COHL)
+- Arduino Community Standards
+- GitHub Best Practices
+
+================================================================================
+VERSION HISTORY
+================================================================================
+
+Version 1.0 - January 2025
+- Initial MIT License for BloodHound VENOM Project
+- Hardware designs and firmware release
+- Community contribution guidelines
+
+This license may be updated in future versions. Check GitHub for latest.
+
+================================================================================
+
+END OF LICENSE
+
+For the full MIT License text, see: https://opensource.org/licenses/MIT
+
+================================================================================
