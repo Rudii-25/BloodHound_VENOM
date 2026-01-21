@@ -298,7 +298,7 @@ Built with ❤️ for makers, hackers, and IoT enthusiasts everywhere.
 
 ---
 
-**Made with ❤️ by the BloodHound Community**
+**Made with ❤️ by Rudra Sharma**
 
 ⭐ Star this repository if you find it useful!
 
