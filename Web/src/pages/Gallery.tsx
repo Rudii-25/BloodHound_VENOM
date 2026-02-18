@@ -3,26 +3,24 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-// CHANGE: Renamed the 'Image' icon to 'ImageIcon' to avoid confusion with the standard <img> tag.
 import { Image as ImageIcon, X, ZoomIn, Filter } from "lucide-react";
+const baseUrl = import.meta.env.BASE_URL;
 
-// Gallery images with categories
-// IMPORTANT: Make sure the 'Photos' folder is inside your 'public' directory at the root of your project.
 const galleryImages = [
-  { id: 1, category: "components", title: "Components Overview", desc: "All parts laid out for assembly", src: "/Photos/BloodHound_VENOM-parts.jpg" },
-  { id: 2, category: "components", title: "Parts Detail", desc: "Close-up of all electronic components", src: "/Photos/BloodHound_VENOM-parts.png" },
-  { id: 3, category: "tools", title: "Required Tools", desc: "Soldering tools and equipment", src: "/Photos/BloodHound_VENOM-tools.jpg" },
-  { id: 4, category: "assembly", title: "OLED Pinout", desc: "OLED display pin configuration", src: "/Photos/BloodHound_VENOM-oled-pinout.jpg" },
-  { id: 5, category: "final", title: "Working Device", desc: "Completed BloodHound VENOM in action", src: "/Photos/BloodHound_VENOMmain running photo.jpg" },
-  { id: 6, category: "battery", title: "Battery Mod Overview", desc: "LiPo battery modification layout", src: "/Photos/BloodHound_VENOM-bat-mod12.jpg" },
-  { id: 7, category: "battery", title: "Battery Step 1", desc: "First step of battery installation", src: "/Photos/BloodHound_VENOM-bat-mod1.jpg" },
-  { id: 8, category: "battery", title: "Battery Detail", desc: "Detailed view of battery connections", src: "/Photos/BloodHound_VENOM-bat-mod.jpg" },
-  { id: 9, category: "battery", title: "Advanced Wiring", desc: "Advanced battery wiring configuration", src: "/Photos/BloodHound_VENOM-bat-modwireconfig.jpg" },
-  { id: 10, category: "battery", title: "Battery in Case", desc: "Battery fitted inside the case", src: "/Photos/BloodHound_VENOM-bat-modwithcase.jpg" },
-  { id: 11, category: "battery", title: "Battery PCB", desc: "TP4056 charging module installation", src: "/Photos/BloodHound_VENOM-bat-modwire.jpg" },
-  { id: 12, category: "battery", title: "Wire Soldering", desc: "Soldering battery wires", src: "/Photos/BloodHound_VENOM-bat-modwiresolder.jpg" },
-  { id: 13, category: "battery", title: "Complete Build", desc: "Finished battery-powered device", src: "/Photos/BloodHound_VENOM-bat-modcase.jpg" },
-  { id: 14, category: "comparison", title: "Size Comparison", desc: "With and without battery comparison", src: "/Photos/with battery and without battery comparison.jpg" },
+  { id: 1, category: "components", title: "Components Overview", desc: "All parts laid out for assembly", src: `${baseUrl}Photos/BloodHound_VENOM-parts.jpg` },
+  { id: 2, category: "components", title: "Parts Detail", desc: "Close-up of all electronic components", src: `${baseUrl}Photos/BloodHound_VENOM-parts.png` },
+  { id: 3, category: "tools", title: "Required Tools", desc: "Soldering tools and equipment", src: `${baseUrl}Photos/BloodHound_VENOM-tools.jpg` },
+  { id: 4, category: "assembly", title: "OLED Pinout", desc: "OLED display pin configuration", src: `${baseUrl}Photos/BloodHound_VENOM-oled-pinout.jpg` },
+  { id: 5, category: "final", title: "Working Device", desc: "Completed BloodHound VENOM in action", src: `${baseUrl}Photos/BloodHound_VENOMmain running photo.jpg` },
+  { id: 6, category: "battery", title: "Battery Mod Overview", desc: "LiPo battery modification layout", src: `${baseUrl}Photos/BloodHound_VENOM-bat-mod12.jpg` },
+  { id: 7, category: "battery", title: "Battery Step 1", desc: "First step of battery installation", src: `${baseUrl}Photos/BloodHound_VENOM-bat-mod1.jpg` },
+  { id: 8, category: "battery", title: "Battery Detail", desc: "Detailed view of battery connections", src: `${baseUrl}Photos/BloodHound_VENOM-bat-mod.jpg` },
+  { id: 9, category: "battery", title: "Advanced Wiring", desc: "Advanced battery wiring configuration", src: `${baseUrl}Photos/BloodHound_VENOM-bat-modwireconfig.jpg` },
+  { id: 10, category: "battery", title: "Battery in Case", desc: "Battery fitted inside the case", src: `${baseUrl}Photos/BloodHound_VENOM-bat-modwithcase.jpg` },
+  { id: 11, category: "battery", title: "Battery PCB", desc: "TP4056 charging module installation", src: `${baseUrl}Photos/BloodHound_VENOM-bat-modwire.jpg` },
+  { id: 12, category: "battery", title: "Wire Soldering", desc: "Soldering battery wires", src: `${baseUrl}Photos/BloodHound_VENOM-bat-modwiresolder.jpg` },
+  { id: 13, category: "battery", title: "Complete Build", desc: "Finished battery-powered device", src: `${baseUrl}Photos/BloodHound_VENOM-bat-modcase.jpg` },
+  { id: 14, category: "comparison", title: "Size Comparison", desc: "With and without battery comparison", src: `${baseUrl}Photos/with battery and without battery comparison.jpg` },
 ];
 
 const categories = [
