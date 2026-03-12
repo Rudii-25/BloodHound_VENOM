@@ -9,7 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import {
   FileText, Scale, AlertTriangle, Heart, Mail, Github, 
-  Twitter, MessageCircle, ExternalLink
+  Twitter, MessageCircle, ExternalLink, Globe
 } from "lucide-react";
 
 const faqs = [
@@ -92,7 +92,10 @@ export default function AboutPage() {
                 </p>
               </div>
               <div align="center">
-                Made with ❤️ by Rudra Sharma
+                Made with ❤️ by{" "}
+                <a href="http://rudrasharma.tech/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  Rudra Sharma
+                </a>
                 <br />
                 ⭐ Star this repository if you find it useful!
               </div>
@@ -220,6 +223,12 @@ export default function AboutPage() {
                   <a href="https://github.com/Rudii-25/BloodHound_VENOM" target="_blank" rel="noopener noreferrer">
                     <Github className="w-4 h-4" />
                     GitHub
+                  </a>
+                </Button>
+                <Button variant="neonCyan" asChild>
+                  <a href="http://rudrasharma.tech/" target="_blank" rel="noopener noreferrer">
+                    <Globe className="w-4 h-4" />
+                    Portfolio
                   </a>
                 </Button>
                 <Button variant="neonCyan" asChild>

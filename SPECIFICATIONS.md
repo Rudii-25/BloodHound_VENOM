@@ -440,4 +440,6 @@ Not populated on standard PCB. Optional for advanced debugging:
 
 [← Back to README](README.md) | [Next: Gallery →](GALLERY.md)
 
+**Made with ❤️ by [Rudra Sharma](http://rudrasharma.tech/)**
+
 </div>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Github, Twitter, MessageCircle, Heart, ExternalLink } from "lucide-react";
+import { Github, Twitter, MessageCircle, Heart, ExternalLink, Globe } from "lucide-react";
 
 const footerLinks = {
   navigation: [
@@ -24,6 +24,7 @@ const footerLinks = {
 
 const socialLinks = [
   { name: "GitHub", icon: Github, href: "https://github.com/Rudii-25/BloodHound_VENOM" },
+  { name: "Portfolio", icon: Globe, href: "http://rudrasharma.tech/" },
   { name: "Twitter", icon: Twitter, href: "https://twitter.com" },
   { name: "Discord", icon: MessageCircle, href: "https://discord.com" },
 ];
@@ -121,7 +122,10 @@ export function Footer() {
             © 2025 BloodHound VENOM Project. Released under MIT License.
           </p>
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> by Rudra Sharma
+            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> by{" "}
+            <a href="http://rudrasharma.tech/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              Rudra Sharma
+            </a>
           </p>
         </div>
       </div>

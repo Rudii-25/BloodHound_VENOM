@@ -557,4 +557,6 @@ Steps:
 
 [← Back to README](README.md) | [Next: Specifications →](SPECIFICATIONS.md)
 
+**Made with ❤️ by [Rudra Sharma](http://rudrasharma.tech/)**
+
 </div>

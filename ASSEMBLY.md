@@ -438,4 +438,6 @@ GET /pins/voltage
 
 [← Back to README](README.md) | [Next: Firmware Guide →](FIRMWARE.md)
 
+**Made with ❤️ by [Rudra Sharma](http://rudrasharma.tech/)**
+
 </div>

@@ -298,7 +298,7 @@ Built with ❤️ for makers, hackers, and IoT enthusiasts everywhere.
 
 ---
 
-**Made with ❤️ by Rudra Sharma**
+**Made with ❤️ by [Rudra Sharma](http://rudrasharma.tech/)**
 
 ⭐ Star this repository if you find it useful!
 

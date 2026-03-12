@@ -435,4 +435,6 @@ Check the troubleshooting section above or review the assembly steps.
 
 [← Back to README](README.md) | [Assembly Guide →](ASSEMBLY.md) | [Specifications →](SPECIFICATIONS.md)
 
+**Made with ❤️ by [Rudra Sharma](http://rudrasharma.tech/)**
+
 </div>

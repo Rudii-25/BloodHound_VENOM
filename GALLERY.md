@@ -279,4 +279,6 @@ Consider contributing them to the gallery to inspire other makers!
 
 [← Back to README](README.md) | [← Assembly Guide](ASSEMBLY.md) | [Firmware Guide →](FIRMWARE.md)
 
+**Made with ❤️ by [Rudra Sharma](http://rudrasharma.tech/)**
+
 </div>

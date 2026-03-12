@@ -643,4 +643,6 @@ every contribution counts and is deeply appreciated.
 
 **Happy Contributing! 🚀**
 
+**Made with ❤️ by [Rudra Sharma](http://rudrasharma.tech/)**
+
 </div>
